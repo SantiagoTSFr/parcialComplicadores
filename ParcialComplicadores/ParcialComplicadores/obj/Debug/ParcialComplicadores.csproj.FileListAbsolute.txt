@@ -1,0 +1,9 @@
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\bin\Debug\ParcialComplicadores.exe.config
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\bin\Debug\ParcialComplicadores.exe
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\bin\Debug\ParcialComplicadores.pdb
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.csprojAssemblyReference.cache
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.Form1.resources
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.Properties.Resources.resources
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.csproj.GenerateResource.cache
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.exe
+C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.pdb
