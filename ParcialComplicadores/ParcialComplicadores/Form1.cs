@@ -229,11 +229,220 @@ namespace ParcialComplicadores
 
                 }
             }
-            txtMorse.Text = LineaResultado;
+            txtMorse.Text = LineaResultado.ToUpper();
             
         }
 
-        
+
+        private void ConvertirALatino()
+        {
+            String cadenaAValidar = txtMorse.Text.Trim();
+            String[] caractereresAValidar = cadenaAValidar.Split(' ');
+            for (int i = 0; caractereresAValidar.Length > i; i++)
+            {
+                if (i == 0)
+                {
+                    CaracterActual = caractereresAValidar[i].ToString().ToLower();
+                }
+                else if (i > 0)
+                {
+                    CaracterActual = caractereresAValidar[i].ToString().ToLower();
+                    CaracterAnterior = caractereresAValidar[i - 1].ToString().ToLower();
+                }
+                if (CaracterActual == "") {
+                    CaracterActual = " ";
+                }
+                switch (CaracterActual)
+                {
+                    case ".-":
+                        LineaResultado += "a";
+                        break;
+                    case "-...":
+                        LineaResultado += "b";
+                        break;
+                    case "-.-.":
+                        LineaResultado += "c";
+                        break;
+                    case "-..":
+                        LineaResultado += "d";
+                        break;
+                    case ".":
+                        LineaResultado += "e";
+                        break;
+                    case "..-.":
+                        LineaResultado += "f";
+                        break;
+                    case "--.":
+                        LineaResultado += "g";
+                        break;
+                    case "....":
+                        LineaResultado += "h";
+                        break;
+                    case "..":
+                        LineaResultado += "i";
+                        break;
+                    case ".---":
+                        LineaResultado += "j";
+                        break;
+                    case "-.-":
+                        LineaResultado += "k";
+                        break;
+                    case ".-..":
+                        LineaResultado += "l";
+                        break;
+                    case "--":
+                        LineaResultado += "m";
+                        break;
+                    case "-.":
+                        LineaResultado += "n";
+                        break;
+                    case "---":
+                        LineaResultado += "o";
+                        break;
+                    case ".--.":
+                        LineaResultado += "p";
+                        break;
+                    case "--.-":
+                        LineaResultado += "q";
+                        break;
+                    case ".-.":
+                        LineaResultado += "r";
+                        break;
+                    case "...":
+                        LineaResultado += "s";
+                        break;
+                    case "-":
+                        LineaResultado += "t";
+                        break;
+                    case "..-":
+                        LineaResultado += "u";
+                        break;
+                    case "...-":
+                        LineaResultado += "v";
+                        break;
+                    case ".--":
+                        LineaResultado += "w";
+                        break;
+                    case "-..-":
+                        LineaResultado += "x";
+                        break;
+                    case "-.--":
+                        LineaResultado += "y";
+                        break;
+                    case "--..":
+                        LineaResultado += "z";
+                        break;
+                    case ".----":
+                        LineaResultado += "1";
+                        break;
+                    case "..---":
+                        LineaResultado += "2";
+                        break;
+                    case "...--":
+                        LineaResultado += "3";
+                        break;
+                    case "....-":
+                        LineaResultado += "4";
+                        break;
+                    case ".....":
+                        LineaResultado += "5";
+                        break;
+                    case "-....":
+                        LineaResultado += "6";
+                        break;
+                    case "--...":
+                        LineaResultado += "7";
+                        break;
+                    case "---..":
+                        LineaResultado += "8";
+                        break;
+                    case "----.":
+                        LineaResultado += "9";
+                        break;
+                    case "-----":
+                        LineaResultado += "0";
+                        break;
+                    case " ":
+                        
+                        break;
+                    case ".-.-.-":
+                        LineaResultado += ".";
+                        break;
+                    case "--..--":
+                        LineaResultado += ",";
+                        break;
+                    case "..--..":
+                        LineaResultado += "?";
+                        break;
+                    case ".----.":
+                        LineaResultado += "'";
+                        break;
+                    case "-.-.--":
+                        LineaResultado += "!";
+                        break;
+                    case "-..-.":
+                        LineaResultado += "/";
+                        break;
+                    case "-.--.":
+                        LineaResultado += "(";
+                        break;
+                    case "-.--.-":
+                        LineaResultado += ")";
+                        break;
+                    case ".-...":
+                        LineaResultado += "&";
+                        break;
+                    case "---...":
+                        LineaResultado += ":";
+                        break;
+                    case "-.-.-.":
+                        LineaResultado += ";";
+                        break;
+                    case "-...-":
+                        LineaResultado += "=";
+                        break;
+                    case ".-.-.":
+                        LineaResultado += "+";
+                        break;
+                    case "-....-":
+                        LineaResultado += "-";
+                        break;
+                    case "..--.-":
+                        LineaResultado += "_";
+                        break;
+                    case ".-..-."://Comillas dobles revisar
+                        LineaResultado += "'u0022'";
+                        break;
+                    case "...-..-":
+                        LineaResultado += "$";
+                        break;
+                    case ".--.-.":
+                        LineaResultado += "@";
+                        break;
+                    case "..-.-":
+                        LineaResultado += "¿";
+                        break;
+                    case "--...-":
+                        LineaResultado += "¡";
+                        break;
+                    case "/":
+                        LineaResultado += " ";
+                        break;
+                    case "\r":
+                        break;
+                    case "\n":
+                        break;
+                    default:
+                        LineaResultado += "#" + ESPACIO;
+                        break;
+
+                }
+            }
+            txtLatino.Text = LineaResultado.ToUpper();
+
+        }
+
+
         private void chkLatinoAMorse_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -242,6 +451,8 @@ namespace ParcialComplicadores
                 txtLatino.Enabled = true;
                 txtMorse.Enabled = false;
                 chkMorseALatino.Checked = false;
+                btnConvAMorse.Enabled = true;
+                btnConvertirALatino.Enabled = false;
             }
             else {
                 chkLatinoAMorse.Checked = true;
@@ -257,6 +468,8 @@ namespace ParcialComplicadores
                 txtLatino.Enabled = false;
                 txtMorse.Enabled = true;
                 chkLatinoAMorse.Checked = false;
+                btnConvAMorse.Enabled = false;
+                btnConvertirALatino.Enabled = true;
             }
             else
             {
@@ -270,6 +483,17 @@ namespace ParcialComplicadores
         {
             LineaResultado = "";
             ConvertirAMorse();
+        }
+
+        private void btnConvertirALatino_Click(object sender, EventArgs e)
+        {
+            LineaResultado = "";
+            ConvertirALatino();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

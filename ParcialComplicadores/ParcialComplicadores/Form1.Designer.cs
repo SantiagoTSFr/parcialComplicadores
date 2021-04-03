@@ -35,6 +35,7 @@
             this.chkLatinoAMorse = new System.Windows.Forms.CheckBox();
             this.chkMorseALatino = new System.Windows.Forms.CheckBox();
             this.btnConvAMorse = new System.Windows.Forms.Button();
+            this.btnConvertirALatino = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLatino
@@ -107,11 +108,22 @@
             this.btnConvAMorse.UseVisualStyleBackColor = true;
             this.btnConvAMorse.Click += new System.EventHandler(this.btnConvAMorse_Click);
             // 
+            // btnConvertirALatino
+            // 
+            this.btnConvertirALatino.Location = new System.Drawing.Point(519, 312);
+            this.btnConvertirALatino.Name = "btnConvertirALatino";
+            this.btnConvertirALatino.Size = new System.Drawing.Size(113, 31);
+            this.btnConvertirALatino.TabIndex = 11;
+            this.btnConvertirALatino.Text = "Convertir a Morse";
+            this.btnConvertirALatino.UseVisualStyleBackColor = true;
+            this.btnConvertirALatino.Click += new System.EventHandler(this.btnConvertirALatino_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnConvertirALatino);
             this.Controls.Add(this.btnConvAMorse);
             this.Controls.Add(this.chkMorseALatino);
             this.Controls.Add(this.chkLatinoAMorse);
@@ -121,6 +133,7 @@
             this.Controls.Add(this.txtLatino);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +148,7 @@
         private System.Windows.Forms.CheckBox chkLatinoAMorse;
         private System.Windows.Forms.CheckBox chkMorseALatino;
         private System.Windows.Forms.Button btnConvAMorse;
+        private System.Windows.Forms.Button btnConvertirALatino;
     }
 }
 
