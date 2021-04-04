@@ -7,3 +7,13 @@ C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Deb
 C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.csproj.GenerateResource.cache
 C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.exe
 C:\Users\Usuario1\source\repos\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.pdb
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\bin\Debug\ParcialComplicadores.exe.config
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\bin\Debug\ParcialComplicadores.exe
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\bin\Debug\ParcialComplicadores.pdb
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.csprojAssemblyReference.cache
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.Form1.resources
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.Properties.Resources.resources
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.csproj.GenerateResource.cache
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.exe
+C:\Users\james\Desktop\parcialComplicadores\ParcialComplicadores\ParcialComplicadores\obj\Debug\ParcialComplicadores.pdb

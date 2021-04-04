@@ -481,19 +481,60 @@ namespace ParcialComplicadores
 
         private void btnConvAMorse_Click(object sender, EventArgs e)
         {
-            LineaResultado = "";
+            limpiarResultado();
             ConvertirAMorse();
         }
 
         private void btnConvertirALatino_Click(object sender, EventArgs e)
         {
-            LineaResultado = "";
+            limpiarResultado();
             ConvertirALatino();
+        }
+
+        private void limpiarResultado() {
+            LineaResultado = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOpenArchive_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    txtLatino.Clear();
+                    txtMorse.Clear();
+                    string[] lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                        if (txtLatino.Enabled) {
+                            txtLatino.Text += (lines[i]);
+                        }
+                        else
+                        {
+                            txtMorse.Text += (lines[i]);
+                        }
+                    }
+                    if (txtLatino.Enabled)
+                    {
+                        limpiarResultado();
+                        ConvertirAMorse();
+                    }
+                    else
+                    {
+                        limpiarResultado();
+                        ConvertirALatino();
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Farid el mejor " + exception);
+            }
         }
     }
 }
